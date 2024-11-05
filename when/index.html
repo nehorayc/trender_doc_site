@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>When - Trender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "When";
+        var mkdocs_page_input_path = "when.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Trender
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../columns/">Data Columns</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Filters Page</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../filter_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../where/">Where</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">When</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#date-filters">Date Filters</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-publish-date">1. Publish Date</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-use">How to use:</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#example">Example:</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#level-of-granularity">Level of Granularity</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#2-aggregation-by-time-period">2. Aggregation by Time Period</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#available-options">Available options:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-use_1">How to use:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-features">Advanced Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tracking-the-volume-of-news-on-a-specific-topic-over-time">Tracking the Volume of News on a Specific Topic Over Time</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#analyzing-crisis-developments">Analyzing Crisis Developments</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../who/">Who</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >What</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../what/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../categories/">Categories</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exploration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../exploration_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../map_view/">Map View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../country_connection_graph/">Country Connection Graph</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decomposition_tree/">Decomposition Tree</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../table_view/">Table View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../live_slope/">Live Slope</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prediction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_graph/">Prediction Graph</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_table/">Prediction Table</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Trender</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Filters Page</li>
+      <li class="breadcrumb-item active">When</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="when-date-filters-and-granularity">When: Date Filters and Granularity</h1>
+<p><img alt="when" src="../img/when.png" /></p>
+<p>The <strong>When</strong> section in the Trender system allows users to filter news articles based on the time they were published. This filter is essential for narrowing down news content based on time frames, allowing for trends and patterns to be analyzed effectively.</p>
+<h2 id="date-filters">Date Filters</h2>
+<h3 id="1-publish-date">1. Publish Date</h3>
+<p>The <strong>Publish Date</strong> filter lets users specify a date range for the news articles they want to analyze. Articles outside the selected date range will be excluded from the results.</p>
+<h3 id="how-to-use">How to use:</h3>
+<ul>
+<li>Select a start and end date from the date picker.</li>
+<li>The system will return all articles published within the specified range.</li>
+</ul>
+<h4 id="example">Example:</h4>
+<p>If you want to see articles from January 1, 2024, to January 31, 2024, set the date range accordingly, and the results will reflect only that period.</p>
+<hr />
+<h2 id="level-of-granularity">Level of Granularity</h2>
+<h3 id="2-aggregation-by-time-period">2. Aggregation by Time Period</h3>
+<p>Users can select the level of <strong>granularity</strong> for displaying results. This feature is helpful when you want to see the number of articles or trends over specific time intervals.</p>
+<h3 id="available-options">Available options:</h3>
+<ul>
+<li><strong>Daily</strong>: Display data aggregated by each day.</li>
+<li><strong>Weekly</strong>: Group and display data by week.</li>
+<li><strong>Monthly</strong>: Aggregate and show data by month.</li>
+<li><strong>Yearly</strong>: Show data grouped by year.</li>
+</ul>
+<h3 id="how-to-use_1">How to use:</h3>
+<ul>
+<li>Select the granularity level you wish to apply. For example, if you choose "Monthly," Trender will group and display the data for each month within the selected date range.</li>
+<li>This feature is especially useful for identifying trends, spikes, or fluctuations over time.</li>
+</ul>
+<hr />
+<h2 id="examples">Examples</h2>
+<ol>
+<li><strong>Analyze news articles for a specific week</strong>:</li>
+<li>Set the date range to "March 1, 2024 - March 7, 2024".</li>
+<li>
+<p>Choose <strong>Daily</strong> granularity to see the number of articles published each day during that week.</p>
+</li>
+<li>
+<p><strong>View long-term trends</strong>:</p>
+</li>
+<li>Set the date range to "January 2023 - December 2023".</li>
+<li>Select <strong>Monthly</strong> granularity to observe how the volume of articles changed month by month.</li>
+</ol>
+<hr />
+<h2 id="advanced-features">Advanced Features</h2>
+<ul>
+<li>
+<p><strong>Dynamic Range</strong>: Trender allows for dynamic date ranges such as "Last 7 days", "Last 30 days", or "Year to date", providing a flexible approach to analysis without manually selecting dates.</p>
+</li>
+<li>
+<p><strong>Custom Granularity</strong>: For more advanced users, Trender supports custom granularity options (e.g., quarterly), allowing for even more fine-tuned analysis of data over time.</p>
+</li>
+</ul>
+<hr />
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="tracking-the-volume-of-news-on-a-specific-topic-over-time">Tracking the Volume of News on a Specific Topic Over Time</h3>
+<p>If you want to track how often a particular subject or event has been mentioned in the news, you can set a time range and choose the level of granularity. For example, you can compare how political news spiked around election time versus other periods.</p>
+<h3 id="analyzing-crisis-developments">Analyzing Crisis Developments</h3>
+<p>By filtering news based on a precise time window and adjusting the granularity to daily or weekly, you can monitor how a crisis unfolded, including key moments or sudden changes in sentiment.</p>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../where/" class="btn btn-neutral float-left" title="Where"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../who/" class="btn btn-neutral float-right" title="Who">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../where/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../who/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
