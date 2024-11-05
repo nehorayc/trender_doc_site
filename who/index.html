@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Who - Trender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Who";
+        var mkdocs_page_input_path = "who.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Trender
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../columns/">Data Fields</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Filters Page</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../filter_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../where/">Where</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../when/">When</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Who</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#subject-filters">Subject Filters</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-subject-name">1. Subject Name</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-use">How to use:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-subject-type-icews-classification">2. Subject Type (ICEWS Classification)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-use_1">How to use:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#common-subject-types">Common Subject Types:</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#object-filters">Object Filters</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#3-object-name">3. Object Name</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-use_2">How to use:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-object-type-icews-classification">4. Object Type (ICEWS Classification)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-use_3">How to use:</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sentiment-filters">Sentiment Filters</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#5-actor-1-sentiment-subjects-sentiment-toward-object">5. Actor 1 Sentiment (Subject’s Sentiment toward Object)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-use_4">How to use:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#example">Example:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6-actor-2-sentiment-objects-sentiment-toward-subject">6. Actor 2 Sentiment (Object’s Sentiment toward Subject)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#how-to-use_5">How to use:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#example_1">Example:</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#identifying-influential-actors-in-conflicts">Identifying Influential Actors in Conflicts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#analyzing-relationships-between-countries-or-entities">Analyzing Relationships Between Countries or Entities</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tracking-specific-entities-over-time">Tracking Specific Entities Over Time</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary-of-filters">Summary of Filters</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >What</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../what/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../categories/">Categories</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exploration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../exploration_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../map_view/">Map View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../country_connection_graph/">Country Connection Graph</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decomposition_tree/">Decomposition Tree</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../table_view/">Table View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../live_slope/">Live Slope</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prediction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_graph/">Prediction Graph</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_table/">Prediction Table</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Trender</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Filters Page</li>
+      <li class="breadcrumb-item active">Who</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="who-subject-and-object-filters">Who: Subject and Object Filters</h1>
+<p><img alt="who" src="../img/who.png" /></p>
+<p>The <strong>Who</strong> section in the Trender system allows users to filter news articles based on the people or entities involved. This section is crucial for focusing on the individuals or groups that drive the events described in the articles. In Trender, this is divided into <strong>Subjects</strong> and <strong>Objects</strong>.</p>
+<h2 id="subject-filters">Subject Filters</h2>
+<p>The <strong>Subject</strong> refers to the individual or group that performed the action described in the news article. You can filter articles by various attributes of the subject.</p>
+<h3 id="1-subject-name">1. Subject Name</h3>
+<p>The <strong>Subject Name</strong> filter lets you search for articles that mention a specific subject. This could be a person, organization, or any entity acting within the event.</p>
+<h4 id="how-to-use">How to use:</h4>
+<ul>
+<li>Enter the name of the subject you want to track. For example, typing "Joe Biden" will return articles where Joe Biden is the primary subject.</li>
+</ul>
+<hr />
+<h3 id="2-subject-type-icews-classification">2. Subject Type (ICEWS Classification)</h3>
+<p>The <strong>Subject Type</strong> filter allows users to categorize subjects based on predefined types from the <strong>Integrated Crisis Early Warning System (ICEWS)</strong> taxonomy. These types can include categories such as "Government," "Military," "Non-State Actor," etc.</p>
+<h4 id="how-to-use_1">How to use:</h4>
+<ul>
+<li>Select a subject type from the dropdown menu.</li>
+<li>Example: Selecting "Government" will display articles where the subject is a government entity.</li>
+</ul>
+<h4 id="common-subject-types">Common Subject Types:</h4>
+<ul>
+<li><strong>Government</strong>: State actors like presidents, prime ministers, etc.</li>
+<li><strong>Military</strong>: Armed forces personnel.</li>
+<li><strong>Non-State Actor</strong>: Terrorist organizations, NGOs, etc.</li>
+</ul>
+<hr />
+<h2 id="object-filters">Object Filters</h2>
+<p>The <strong>Object</strong> is the entity on which the action is performed. Like the subject, objects can be filtered to narrow down news coverage by specific targets or recipients of the action.</p>
+<h3 id="3-object-name">3. Object Name</h3>
+<p>The <strong>Object Name</strong> filter works similarly to the subject name filter, but it focuses on the target of the action in the article.</p>
+<h4 id="how-to-use_2">How to use:</h4>
+<ul>
+<li>Enter the name of the object in the search bar. </li>
+<li>Example: Searching for "Ukraine" will display articles where Ukraine is the object or target of actions described in the articles.</li>
+</ul>
+<hr />
+<h3 id="4-object-type-icews-classification">4. Object Type (ICEWS Classification)</h3>
+<p>Similar to subject type, <strong>Object Type</strong> filters use ICEWS classifications to sort objects into predefined categories.</p>
+<h4 id="how-to-use_3">How to use:</h4>
+<ul>
+<li>Select an object type from the dropdown menu to focus on specific kinds of entities.</li>
+<li>Example: Choosing "Non-State Actor" will return articles where the object is a non-state actor, such as a rebel group or activist organization.</li>
+</ul>
+<hr />
+<h2 id="sentiment-filters">Sentiment Filters</h2>
+<p>In addition to filtering by who the subject and object are, Trender also allows users to filter based on the <strong>sentiment</strong> between the actors.</p>
+<h3 id="5-actor-1-sentiment-subjects-sentiment-toward-object">5. Actor 1 Sentiment (Subject’s Sentiment toward Object)</h3>
+<p>This filter lets you explore the sentiment of the <strong>Subject</strong> toward the <strong>Object</strong> in the article. Sentiment analysis is performed using NLP techniques and is expressed as positive, neutral, or negative.</p>
+<h4 id="how-to-use_4">How to use:</h4>
+<ul>
+<li>Choose whether you want to see articles where the sentiment of the subject (Actor 1) toward the object (Actor 2) is <strong>positive</strong>, (-1) <strong>neutral</strong> (0), or <strong>negative</strong> (+1).</li>
+</ul>
+<h4 id="example">Example:</h4>
+<p>If you select <strong>negative</strong> sentiment, you’ll see articles where the subject (e.g., a government) has a negative stance toward the object (e.g., a corporation).</p>
+<hr />
+<h3 id="6-actor-2-sentiment-objects-sentiment-toward-subject">6. Actor 2 Sentiment (Object’s Sentiment toward Subject)</h3>
+<p>This filter works similarly to Actor 1 Sentiment but focuses on the <strong>Object’s</strong> sentiment toward the <strong>Subject</strong>.</p>
+<h4 id="how-to-use_5">How to use:</h4>
+<ul>
+<li>Choose whether to display articles where the sentiment of the object (Actor 2) toward the subject (Actor 1) is <strong>positive</strong>, (-1) <strong>neutral</strong> (0), or <strong>negative</strong> (+1).</li>
+</ul>
+<h4 id="example_1">Example:</h4>
+<p>If the object (e.g., a country) has a <strong>positive</strong> sentiment toward the subject (e.g., a politician), those articles will be displayed.</p>
+<hr />
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="identifying-influential-actors-in-conflicts">Identifying Influential Actors in Conflicts</h3>
+<p>By using the <strong>Subject Name</strong> and <strong>Subject Type</strong> filters, you can easily track key actors in major global conflicts, such as government officials or military leaders.</p>
+<h3 id="analyzing-relationships-between-countries-or-entities">Analyzing Relationships Between Countries or Entities</h3>
+<p>The <strong>Sentiment Filters</strong> provide insights into how the subject and object interact. For example, if you want to know how the media portrays the relationship between two countries, you can filter based on sentiment analysis.</p>
+<h3 id="tracking-specific-entities-over-time">Tracking Specific Entities Over Time</h3>
+<p>Using the <strong>Object Name</strong> filter in combination with the <strong>When</strong> filter allows users to track the media’s focus on a particular country or entity over time.</p>
+<hr />
+<h2 id="summary-of-filters">Summary of Filters</h2>
+<ul>
+<li><strong>Subject Name</strong>: Filter by who performed the action.</li>
+<li><strong>Subject Type</strong>: Categorize subjects using ICEWS classifications.</li>
+<li><strong>Object Name</strong>: Filter by the target of the action.</li>
+<li><strong>Object Type</strong>: Categorize objects using ICEWS classifications.</li>
+<li><strong>Actor 1 Sentiment</strong>: Sentiment of subject toward object.</li>
+<li><strong>Actor 2 Sentiment</strong>: Sentiment of object toward subject.</li>
+</ul>
+<hr />
+<h1 id="who-subject-and-object-filters_1">Who: Subject and Object Filters</h1>
+<p><img alt="who" src="../img/who.png" /></p>
+<p>The <strong>Who</strong> section in the Trender system allows users to filter news articles based on the people or entities involved. This section is crucial for focusing on the individuals or groups that drive the events described in the articles. In Trender, this is divided into <strong>Subjects</strong> and <strong>Objects</strong>.</p>
+<h2 id="subject-filters_1">Subject Filters</h2>
+<p>The <strong>Subject</strong> refers to the individual or group that performed the action described in the news article. You can filter articles by various attributes of the subject.</p>
+<h3 id="1-subject-name_1">1. Subject Name</h3>
+<p>The <strong>Subject Name</strong> filter lets you search for articles that mention a specific subject. This could be a person, organization, or any entity acting within the event.</p>
+<h4 id="how-to-use_6">How to use:</h4>
+<ul>
+<li>Enter the name of the subject you want to track. For example, typing "Joe Biden" will return articles where Joe Biden is the primary subject.</li>
+</ul>
+<hr />
+<h3 id="2-subject-type-icews-classification_1">2. Subject Type (ICEWS Classification)</h3>
+<p>The <strong>Subject Type</strong> filter allows users to categorize subjects based on predefined types from the <strong>Integrated Crisis Early Warning System (ICEWS)</strong> taxonomy. The ICEWS sectors ontology organizes entities into a hierarchical structure, ranging from broad sectors to specific offices or ministries, allowing for detailed categorization of subjects. Examples include "Government," "Military," and "Non-State Actor."</p>
+<h4 id="how-to-use_7">How to use:</h4>
+<ul>
+<li>Select a subject type from the dropdown menu.</li>
+<li>Example: Selecting "Government" will display articles where the subject is a government entity.</li>
+</ul>
+<h4 id="common-subject-types-icews-sectors-overview">Common Subject Types (ICEWS Sectors Overview):</h4>
+<ul>
+<li><strong>Government</strong>: State actors such as presidents, prime ministers, or executive offices.</li>
+<li><strong>Military</strong>: Armed forces personnel and entities.</li>
+<li><strong>Non-State Actor</strong>: Groups or individuals not affiliated with a state, such as NGOs, rebel groups, or terrorist organizations.</li>
+</ul>
+<p>This taxonomy supports consistent analysis by categorizing subjects with precision.</p>
+<hr />
+<h2 id="object-filters_1">Object Filters</h2>
+<p>The <strong>Object</strong> is the entity on which the action is performed. Like the subject, objects can be filtered to narrow down news coverage by specific targets or recipients of the action.</p>
+<h3 id="3-object-name_1">3. Object Name</h3>
+<p>The <strong>Object Name</strong> filter works similarly to the subject name filter but focuses on the target of the action in the article.</p>
+<h4 id="how-to-use_8">How to use:</h4>
+<ul>
+<li>Enter the name of the object in the search bar.</li>
+<li>Example: Searching for "Ukraine" will display articles where Ukraine is the object or target of actions described in the articles.</li>
+</ul>
+<hr />
+<h3 id="4-object-type-icews-classification_1">4. Object Type (ICEWS Classification)</h3>
+<p>Similar to subject type, <strong>Object Type</strong> filters use ICEWS classifications to sort objects into predefined categories. This allows for precise filtering by categorizing targets based on the ICEWS sectors ontology.</p>
+<h4 id="how-to-use_9">How to use:</h4>
+<ul>
+<li>Select an object type from the dropdown menu to focus on specific kinds of entities.</li>
+<li>Example: Choosing "Non-State Actor" will return articles where the object is a non-state actor, such as a rebel group or activist organization.</li>
+</ul>
+<hr />
+<h2 id="sentiment-filters_1">Sentiment Filters</h2>
+<p>In addition to filtering by who the subject and object are, Trender also allows users to filter based on the <strong>sentiment</strong> between the actors.</p>
+<h3 id="5-actor-1-sentiment-subjects-sentiment-toward-object_1">5. Actor 1 Sentiment (Subject’s Sentiment toward Object)</h3>
+<p>This filter lets you explore the sentiment of the <strong>Subject</strong> toward the <strong>Object</strong> in the article. Sentiment analysis is performed using NLP techniques and is expressed as positive, neutral, or negative.</p>
+<h4 id="how-to-use_10">How to use:</h4>
+<ul>
+<li>Choose whether you want to see articles where the sentiment of the subject (Actor 1) toward the object (Actor 2) is <strong>positive</strong> (-1), <strong>neutral</strong> (0), or <strong>negative</strong> (+1).</li>
+</ul>
+<h4 id="example_2">Example:</h4>
+<p>If you select <strong>negative</strong> sentiment, you’ll see articles where the subject (e.g., a government) has a negative stance toward the object (e.g., a corporation).</p>
+<hr />
+<h3 id="6-actor-2-sentiment-objects-sentiment-toward-subject_1">6. Actor 2 Sentiment (Object’s Sentiment toward Subject)</h3>
+<p>This filter works similarly to Actor 1 Sentiment but focuses on the <strong>Object’s</strong> sentiment toward the <strong>Subject</strong>.</p>
+<h4 id="how-to-use_11">How to use:</h4>
+<ul>
+<li>Choose whether to display articles where the sentiment of the object (Actor 2) toward the subject (Actor 1) is <strong>positive</strong> (-1), <strong>neutral</strong> (0), or <strong>negative</strong> (+1).</li>
+</ul>
+<h4 id="example_3">Example:</h4>
+<p>If the object (e.g., a country) has a <strong>positive</strong> sentiment toward the subject (e.g., a politician), those articles will be displayed.</p>
+<hr />
+<h2 id="use-cases_1">Use Cases</h2>
+<h3 id="identifying-influential-actors-in-conflicts_1">Identifying Influential Actors in Conflicts</h3>
+<p>By using the <strong>Subject Name</strong> and <strong>Subject Type</strong> filters, you can easily track key actors in major global conflicts, such as government officials or military leaders.</p>
+<h3 id="analyzing-relationships-between-countries-or-entities_1">Analyzing Relationships Between Countries or Entities</h3>
+<p>The <strong>Sentiment Filters</strong> provide insights into how the subject and object interact. For example, if you want to know how the media portrays the relationship between two countries, you can filter based on sentiment analysis.</p>
+<h3 id="tracking-specific-entities-over-time_1">Tracking Specific Entities Over Time</h3>
+<p>Using the <strong>Object Name</strong> filter in combination with the <strong>When</strong> filter allows users to track the media’s focus on a particular country or entity over time.</p>
+<hr />
+<h2 id="summary-of-filters_1">Summary of Filters</h2>
+<ul>
+<li><strong>Subject Name</strong>: Filter by who performed the action.</li>
+<li><strong>Subject Type</strong>: Categorize subjects using ICEWS classifications.</li>
+<li><strong>Object Name</strong>: Filter by the target of the action.</li>
+<li><strong>Object Type</strong>: Categorize objects using ICEWS classifications.</li>
+<li><strong>Actor 1 Sentiment</strong>: Sentiment of subject toward object.</li>
+<li><strong>Actor 2 Sentiment</strong>: Sentiment of object toward subject.</li>
+</ul>
+<hr />
+<h1 id="icews-ontology-overview">ICEWS Ontology Overview</h1>
+<p>The <strong>Integrated Crisis Early Warning System (ICEWS)</strong> sectors ontology is a hierarchical classification system designed to organize and categorize entities involved in global events, particularly for crisis analysis and early warning purposes. This structure allows analysts to systematically identify roles and functions across various sectors, from broad national levels to specific government offices, thereby improving the accuracy and relevance of geopolitical analysis.</p>
+<hr />
+<h2 id="structure-of-the-icews-sectors-tree">Structure of the ICEWS Sectors Tree</h2>
+<p>The ICEWS sectors ontology is organized as a tree, where each level in the hierarchy refines and narrows the scope of the previous level. Below is an outline of the structure:</p>
+<h3 id="level-0-broad-categories">Level 0: Broad Categories</h3>
+<p>The top level defines the broadest categories, such as <strong>National Sectors</strong>, which represent the major domains within which actors operate. This level is designed to give an overarching view of general sectors relevant to geopolitical events.</p>
+<h3 id="level-1-primary-sectors">Level 1: Primary Sectors</h3>
+<p>Each broad category is divided into primary sectors, such as <strong>Government</strong> within the "National Sectors" category. Primary sectors help narrow down the focus to specific functions or domains within each broad category.</p>
+<h3 id="level-2-sub-sectors">Level 2: Sub-Sectors</h3>
+<p>Primary sectors are further broken down into sub-sectors. For example, within "Government," the sub-sector <strong>Executive</strong> defines a specific segment of government operations. Sub-sectors allow analysts to distinguish between different functions within the primary sector.</p>
+<h3 id="level-3-specific-offices-or-functions">Level 3: Specific Offices or Functions</h3>
+<p>Each sub-sector may contain specific offices or functions. For instance, the <strong>Executive Office</strong> represents a concrete function within the Executive sub-sector, focusing on entities like the Presidential Office or Prime Minister’s Office.</p>
+<h3 id="level-4-detailed-ministries-or-units">Level 4: Detailed Ministries or Units</h3>
+<p>At the deepest level, the tree includes particular ministries or specialized units within the office functions, such as the <strong>Agriculture / Fishing / Forestry Ministry</strong>. This level provides the most specific categorization, allowing for granular analysis of events related to individual government ministries or departments.</p>
+<hr />
+<h2 id="purpose-and-application-of-the-icews-ontology">Purpose and Application of the ICEWS Ontology</h2>
+<p>The ICEWS sectors ontology aids in the systematic classification of actors in global events, allowing analysts to:
+- <strong>Improve Analysis Consistency</strong>: By using a standardized structure, analysts can consistently categorize entities across different regions and contexts.
+- <strong>Enable Targeted Filtering</strong>: The hierarchy allows users to filter events and actors by specific levels, making it easier to focus on relevant sectors.
+- <strong>Support Crisis Detection</strong>: By categorizing entities into detailed roles and functions, the system enhances the detection of sector-specific crises and patterns.</p>
+<p>This hierarchical structure supports ICEWS’s mission of predicting, analyzing, and responding to international crises by categorizing entities with a high degree of specificity.</p>
+<hr />
+<h2 id="example-of-icews-sector-hierarchy">Example of ICEWS Sector Hierarchy</h2>
+<p>Here’s an example of how a sector might be organized:</p>
+<ol>
+<li><strong>National Sectors</strong></li>
+<li><strong>Government</strong><ul>
+<li><strong>Executive</strong></li>
+<li><strong>Executive Office</strong></li>
+<li><strong>Agriculture / Fishing / Forestry Ministry</strong></li>
+</ul>
+</li>
+</ol>
+<p>This structure provides analysts with a clear, organized framework for categorizing the roles and functions of entities in global events, supporting comprehensive and targeted crisis analysis.</p>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../when/" class="btn btn-neutral float-left" title="When"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../what/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../when/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../what/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

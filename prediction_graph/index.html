@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Prediction Graph - Trender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Prediction Graph";
+        var mkdocs_page_input_path = "prediction_graph.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Trender
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../columns/">Data Fields</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Filters Page</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../filter_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../where/">Where</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../when/">When</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../who/">Who</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >What</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../what/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../categories/">Categories</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exploration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../exploration_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../map_view/">Map View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../country_connection_graph/">Country Connection Graph</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decomposition_tree/">Decomposition Tree</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../table_view/">Table View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../live_slope/">Live Slope</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prediction</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Prediction Graph</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#key-features">Key Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example">Example</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_table/">Prediction Table</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Trender</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Prediction</li>
+      <li class="breadcrumb-item active">Prediction Graph</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="prediction-graph-future-event-prediction">Prediction Graph: Future Event Prediction</h1>
+<p><img alt="pred-graph.png" src="../img/pred-graph.png" /></p>
+<p>The <strong>Prediction Graph</strong> in Trender provides a graphical display of predicted data for a specific country and category based on the historical data collected. This visualization helps users anticipate potential future trends in event volume.</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Future Trends</strong>: Visualize predicted events for the near future.</li>
+<li><strong>Country-Specific Analysis</strong>: Narrow down the prediction to a specific country and event category.</li>
+<li><strong>Data-Driven Forecasts</strong>: Rely on AI-powered predictions based on historical patterns.</li>
+</ul>
+<h2 id="use-cases">Use Cases</h2>
+<ul>
+<li><strong>Crisis Forecasting</strong>: Use predictions to anticipate the future trajectory of an ongoing crisis.</li>
+<li><strong>Economic Projections</strong>: Predict future trends in economic news based on past data.</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>If you want to predict the volume of healthcare-related events in Germany for the next quarter, the Prediction Graph will display a projected trend line, helping you prepare for potential spikes in healthcare news.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../prediction_overview/" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../prediction_table/" class="btn btn-neutral float-right" title="Prediction Table">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../prediction_overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../prediction_table/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
