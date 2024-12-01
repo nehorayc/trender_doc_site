@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Decomposition Tree - TRENDER</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Decomposition Tree";
+        var mkdocs_page_input_path = "decomposition_tree.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> TRENDER
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../columns/">Data Fields</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Filters Page</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../filter_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../where/">Where</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../when/">When</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../who/">Who</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >What</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../what/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../categories/">Categories</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exploration</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../exploration_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../map_view/">Map View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../country_connection_graph/">Country Connection Graph</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Decomposition Tree</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#filtering-fields">Filtering fields</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#key-features">Key Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example">Example</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../table_view/">Table View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../live_slope/">Live Slope</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prediction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_graph/">Prediction Graph</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prediction_table/">Prediction Table</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">TRENDER</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Exploration</li>
+      <li class="breadcrumb-item active">Decomposition Tree</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="decomposition-tree-drill-down-into-event-data">Decomposition Tree: Drill Down Into Event Data</h1>
+<p><img alt="exp-decomposition.png" src="../img/exp-decomposition.png" /></p>
+<p>The <strong>Decomposition Tree</strong> allows you to explore and break down data across multiple dimensions in Trender. It automatically aggregates event data and enables users to drill down into specific dimensions (like country, category, or subject) in any order they choose. This helps in uncovering deeper insights by navigating through complex datasets.</p>
+<h2 id="filtering-fields">Filtering fields</h2>
+<p>This view can be filtred by all <a href="../columns/">Data fields</a></p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Multi-Dimensional Analysis</strong>: Break down data by country, category, or subject.</li>
+<li><strong>Customizable Drill Down</strong>: Drill down into data in any sequence to explore connections or anomalies.</li>
+<li><strong>Aggregated Insights</strong>: Automatically aggregates data at each level, offering a hierarchical view.</li>
+</ul>
+<h2 id="use-cases">Use Cases</h2>
+<ul>
+<li><strong>Event Type Breakdown</strong>: Explore how a single event type, like political news, is distributed across various regions or actors.</li>
+<li><strong>Sentiment Analysis Drill Down</strong>: Investigate how sentiment varies between countries or actors in relation to specific events.</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>If you are interested in understanding which countries have the highest number of health-related events in 2024, you can use the Decomposition Tree to first break down events by country, then by category (health), and finally by actor sentiment to see which countries have the most positive or negative health news.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../country_connection_graph/" class="btn btn-neutral float-left" title="Country Connection Graph"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../table_view/" class="btn btn-neutral float-right" title="Table View">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../country_connection_graph/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../table_view/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
